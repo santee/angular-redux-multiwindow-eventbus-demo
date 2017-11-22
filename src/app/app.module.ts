@@ -12,6 +12,7 @@ import { NewTodoFormComponent } from './new-todo-form/new-todo-form.component';
 import { todosReducer } from './todo.store';
 import { EffectsModule } from '@ngrx/effects';
 import { TodoEffectsService } from './todo-effects.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TodoEffectsService } from './todo-effects.service';
     BrowserModule,
     FormsModule,
     StoreModule.forRoot({ todos: todosReducer }),
-    EffectsModule.forRoot([ TodoEffectsService, EventbusService ])
+    EffectsModule.forRoot([ TodoEffectsService, EventbusService ]),
+    FlexLayoutModule
   ],
   providers: [ EventbusService ],
   bootstrap: [AppComponent]
