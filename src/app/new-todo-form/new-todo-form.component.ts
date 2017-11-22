@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Todo } from '../todo.model';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app-state';
@@ -7,7 +7,8 @@ import { createTodo } from '../todo.store';
 @Component({
   selector: 'app-new-todo-form',
   templateUrl: './new-todo-form.component.html',
-  styleUrls: ['./new-todo-form.component.css']
+  styleUrls: ['./new-todo-form.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewTodoFormComponent implements OnInit {
 
