@@ -10,6 +10,8 @@ import { EventbusService } from './eventbus.service';
 import { EventsLogComponent } from './events-log/events-log.component';
 import { NewTodoFormComponent } from './new-todo-form/new-todo-form.component';
 import { todosReducer } from './todo.store';
+import { EffectsModule } from '@ngrx/effects';
+import { TodoEffectsService } from './todo-effects.service';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { todosReducer } from './todo.store';
   imports: [
     BrowserModule,
     FormsModule,
-    StoreModule.forRoot({ todos: todosReducer })
+    StoreModule.forRoot({ todos: todosReducer }),
+    EffectsModule.forRoot([ TodoEffectsService, EventbusService ])
   ],
   providers: [ EventbusService ],
   bootstrap: [AppComponent]

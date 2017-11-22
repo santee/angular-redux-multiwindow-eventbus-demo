@@ -157,6 +157,10 @@
   dependencies:
     tslib "^1.7.1"
 
+"@ngrx/effects@^4.1.1":
+  version "4.1.1"
+  resolved "http://cvddev.cloudapp.net/artifactory/api/npm/covance-npm/@ngrx/effects/-/effects-4.1.1.tgz#cb758b8527964b258ea41951f59aa144e3ef9fae"
+
 "@ngrx/store@^4.1.1":
   version "4.1.1"
   resolved "http://cvddev.cloudapp.net/artifactory/api/npm/covance-npm/@ngrx/store/-/store-4.1.1.tgz#680e34df2775e8852754ed777ffac95bd81b7de0"

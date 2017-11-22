@@ -18,4 +18,8 @@ export class EventsLogComponent implements OnInit {
     this.events$ = this.eventbus.allMessages.scan((acc: any[], value: any) => [value, ...acc], []);
   }
 
+  stringify(event: any) {
+    return JSON.stringify(event);
+  }
+
 }
