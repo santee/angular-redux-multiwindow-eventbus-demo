@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { EventbusService } from '../eventbus.service';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-events-log',
   templateUrl: './events-log.component.html',
-  styleUrls: ['./events-log.component.css']
+  styleUrls: ['./events-log.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EventsLogComponent implements OnInit {
 

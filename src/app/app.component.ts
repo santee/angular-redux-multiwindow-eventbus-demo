@@ -10,6 +10,5 @@ export class AppComponent {
   title = 'app';
 
   constructor(private eventbus: EventbusService) {
-    
   }
 }
