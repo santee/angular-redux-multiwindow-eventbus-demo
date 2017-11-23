@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Effect, Actions } from '@ngrx/effects';
-import { LOAD, CREATE_TODO, CreateTodoAction, todoCreated } from './todo.store';
+import { CREATE_TODO, CreateTodoAction, todoCreated } from './todo.store';
 import { EventbusService } from './eventbus.service';
 import { Todo } from './todo.model';
 
